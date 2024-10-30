@@ -350,7 +350,7 @@ Github -> select your profile -> settings -> Developer settings -> Personal acce
 
 Edit it as you see in the following example: 
 
-![image](https://github.com/user-attachments/assets/897e71d8-bb49-448d-a2ca-37a2dc91e60b)
+![image](https://github.com/user-attachments/assets/e54e6094-6c24-47a6-8286-00e9d80188b8)
 
 Remember to copy your personal access token and save it anywhere
 
@@ -372,7 +372,7 @@ copy and paste into it the following: https://github.com/Silas-cloudspace/rentzo
 
 We will use a LAMP stack to build this application. A lamp stack is a group of open-source software that we can use to build a dynamic web application:
 
-![image](https://github.com/user-attachments/assets/3d5e8365-7b72-45c2-9487-22f073275cd4)
+![image](https://github.com/user-attachments/assets/c2a70cff-28cf-47a6-a872-36d2deb0a70b)
  
   •	Linux is the operating system we will use to run the stack.
 
@@ -394,7 +394,7 @@ We do this because we want to upload a value in it, so when we redirect our traf
 
   o	Create a new file and name it “AppServiceProvider.php”
 
-  o	Paste into it the following: https://github.com/Silas-cloudspace/docker-projects/blob/main/rentzone/AppServiceProvider.php
+  o	Paste into it the following: https://github.com/Silas-cloudspace/rentzone-dockerfile/blob/main/rentzone/AppServiceProvider.php
 
    o	This file is to redirect http traffic to https
 
@@ -406,7 +406,7 @@ Create a new file
 
   o	Run: touch build_image.ps1  (build_image.sh for mac)
 
-Copy and paste into it the following: https://github.com/Silas-cloudspace/docker-projects/blob/main/rentzone/build_image.ps1
+Copy and paste into it the following: https://github.com/Silas-cloudspace/rentzone-dockerfile/blob/main/rentzone/build_image.ps1
 
 Create a “.gitignore” file and add into it the “build_images.ps1”
 
@@ -487,7 +487,7 @@ cd rentzone
 
 touch rentzone.env
 
-Paste into it the following: https://github.com/Silas-cloudspace/docker-projects/blob/main/rentzone/rentzone.env
+Paste into it the following: https://github.com/Silas-cloudspace/rentzone-dockerfile/blob/main/rentzone/rentzone.env
 
 Replace it with your own information
 
@@ -527,7 +527,7 @@ When we create the ECS tags, the ECS tag will retrieve the environment variables
 
 Copy the “rentzone.env” file stored in your computer on docker-projects > rentzone to “rentzone-infrastructure-ecs” directory in VS Code
 
- ![image](https://github.com/user-attachments/assets/26308926-98dc-46cc-9ba8-b2fb449c7d68)
+![image](https://github.com/user-attachments/assets/65c640cc-1c3e-4dcb-9005-fe8ff3efef21)
 
 Add “rentzone.env” to .gitignore
 
