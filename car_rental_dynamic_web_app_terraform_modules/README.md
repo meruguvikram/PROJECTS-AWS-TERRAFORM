@@ -6,9 +6,7 @@ Thrilled to announce the completion of my latest project: a fully operational dy
 
 This project is distinguished by the extensive use of AWS services, guaranteeing high availability, scalability, and robust security. It showcases the capability to design and implement intricate infrastructure solutions following modern DevOps methodologies.
 
-rentzone-infrastructure-ecs repository: https://github.com/Silas-cloudspace/rentzone-infrastructure-ecs
-
-terraform-modules repository: https://github.com/Silas-cloudspace/terraform-modules
+terraform-modules repository: https://github.com/Silas-cloudspace/PROJECTS-AWS-TERRAFORM/tree/main/terraform_modules_for_car_rental_project
 
 ## PROJECT
 
