@@ -526,6 +526,7 @@ Run:
 
 3) Copy the “rentzone.env” file stored in your computer on docker-projects > rentzone to “car_rental_dynamic_web_app_terraform_modules” directory in VS Code
 
+![image](https://github.com/user-attachments/assets/f463deac-535d-4842-b6b7-3ec7feec4cd2)
 
 4) Add “rentzone.env” to .gitignore
 
