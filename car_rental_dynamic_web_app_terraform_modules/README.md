@@ -4,8 +4,6 @@ Thrilled to announce the completion of my latest project: a fully operational dy
 
 This project is distinguished by the extensive use of AWS services, guaranteeing high availability, scalability, and robust security. It showcases the capability to design and implement intricate infrastructure solutions following modern DevOps methodologies.
 
-Project repository: https://github.com/Silas-cloudspace/PROJECTS-AWS-TERRAFORM/tree/main/car_rental_dynamic_web_app_terraform_modules
-
 terraform-modules repository: https://github.com/Silas-cloudspace/PROJECTS-AWS-TERRAFORM/tree/main/terraform_modules_for_car_rental_project
 
 ![image](https://github.com/user-attachments/assets/70955bca-4c0d-47fc-8391-00325190249a)
