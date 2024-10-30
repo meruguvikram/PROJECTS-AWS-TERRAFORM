@@ -356,7 +356,7 @@ Remember to copy your personal access token and save it anywhere
 
 ## Create a Dockerfile
 
-Create a new repository on GitHub and call it “docker-projects”
+Create a new repository on GitHub and call it “rentzone-dockerfile”
 
 Open the repository docker-projects in VS Code
 
@@ -368,7 +368,7 @@ Create a new folder for the application.
 
   •	touch Dockerfile
 
-copy and paste into it the following: https://github.com/Silas-cloudspace/docker-projects/blob/main/rentzone/Dockerfile
+copy and paste into it the following: https://github.com/Silas-cloudspace/rentzone-dockerfile
 
 We will use a LAMP stack to build this application. A lamp stack is a group of open-source software that we can use to build a dynamic web application:
 
