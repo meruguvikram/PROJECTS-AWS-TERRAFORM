@@ -11,7 +11,7 @@ private_data_subnet_az1_cidr = "10.4.0.0/24"
 private_data_subnet_az2_cidr = "10.5.0.0/24"
 
 # security group variables
-ssh_ip = "2.120.140.109/32" # your IP
+ssh_ip = "your IP"
 
 # rds variables
 database_identifier     = "dev-rds-db"
