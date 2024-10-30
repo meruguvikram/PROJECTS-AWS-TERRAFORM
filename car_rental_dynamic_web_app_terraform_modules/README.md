@@ -86,7 +86,7 @@ We add //vpc to the end of the SSH URL because the module is located in the vpc 
 
 You need to do the same for the following modules that we create
 
-![image](https://github.com/user-attachments/assets/8a67b165-5eaa-49aa-9d0b-40b84d46ed1c)
+![image](https://github.com/user-attachments/assets/11cb20a0-96fa-4c76-aac0-9cbb4f079847)
 
 touch terraform.tfvars
 
