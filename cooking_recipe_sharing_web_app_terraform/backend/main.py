@@ -27,7 +27,7 @@ session = boto3.Session(
    )
 
 dynamodb = session.resource('dynamodb')
-table = dynamodb.Table('recipes') # This will be the name of our table
+table = dynamodb.Table('recipes') # this is your dynamodb table name
 
 # Configure CORS
 origins = [
