@@ -1,2 +1,3 @@
 ## LINK WITH THE STEPS TO COMPLETE THIS PROJECT: 
-https://medium.com/@silas.cloudspace/aws-project-recipe-sharing-web-app-python-and-cloudformation-390cdd374876
+https://medium.com/@silas.cloudspace/project-cooking-recipe-sharing-web-app-hosted-on-aws-using-terraform-python-fast-api-react-j-9fa8a1b2a742
+
