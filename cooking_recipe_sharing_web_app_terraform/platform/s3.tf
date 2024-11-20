@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "frontend" {
-  bucket = "cooking-recipes-s3-bucket-st"
+  bucket = "your bucket name"
 }
 
 resource "aws_s3_bucket_public_access_block" "frontend" {
