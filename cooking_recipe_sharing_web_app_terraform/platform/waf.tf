@@ -1,6 +1,6 @@
 # Regional WAF (for ALB)
 resource "aws_wafv2_web_acl" "regional" {
-  name        = "regional-web-acl-v11"
+  name        = "regional-web-acl"
   description = "WAF for protecting ALB"
   scope       = "REGIONAL"
   provider    = aws
@@ -81,7 +81,7 @@ resource "aws_wafv2_web_acl" "regional" {
 # CloudFront WAF (Global)
 resource "aws_wafv2_web_acl" "cloudfront" {
   provider    = aws.us-east-1
-  name        = "cloudfront-web-acl-v11"
+  name        = "cloudfront-web-acl"
   description = "WAF for protecting CloudFront"
   scope       = "CLOUDFRONT"
 

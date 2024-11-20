@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "" # "your region"
+  region = "your region"
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "cooking-recipes-state-bucket"
+  bucket = "your bucket name"
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {
@@ -14,7 +14,7 @@ resource "aws_s3_bucket_versioning" "versioning" {
 }
 
 resource "aws_dynamodb_table" "terraform_state_lock" {
-  name           = "cooking-recipes-state-dynamodb"
+  name           = "your dynamodb table name"
   hash_key       = "LockID"
   read_capacity  = 20
   write_capacity = 20
