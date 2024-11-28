@@ -84,7 +84,7 @@ data "aws_iam_policy_document" "require_mfa" {
 
 # Create a policy from that document
 resource "aws_iam_policy" "mfa_policy" {
-  name   = "RequireMFA"
+  name   = "RequireMFAPolicy"
   policy = data.aws_iam_policy_document.require_mfa.json
 }
 
