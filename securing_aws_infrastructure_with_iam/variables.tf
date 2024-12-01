@@ -61,7 +61,7 @@ variable "developers_managed_policies" {
   default = [
     "arn:aws:iam::aws:policy/AmazonEC2FullAccess",
     "arn:aws:iam::aws:policy/AmazonS3FullAccess",
-    "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+    "arn:aws:iam::aws:policy/CloudWatchFullAccess"
   ]
 }
 
