@@ -7,10 +7,20 @@ resource "aws_iam_group" "admin_group" {
   name = "AdminGroup"
 }
 
-# Attach AdministratorAccess Policy to the Group
+# Attach Policies to the Group
 resource "aws_iam_group_policy_attachment" "admin_policy_attachment" {
   group      = aws_iam_group.admin_group.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
+
+resource "aws_iam_group_policy_attachment" "billing_policy_attachment" {
+  group      = aws_iam_group.admin_group.name
+  policy_arn = "arn:aws:iam::aws:policy/AWSBillingConductorFullAccess"
+}
+
+resource "aws_iam_group_policy_attachment" "billing_attachment" {
+  group      = aws_iam_group.admin_group.name
+  policy_arn = "arn:aws:iam::aws:policy/job-function/Billing"
 }
 
 # Create an IAM User
