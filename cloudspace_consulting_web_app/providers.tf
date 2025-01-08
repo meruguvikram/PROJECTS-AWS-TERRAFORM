@@ -14,9 +14,9 @@ provider "aws" {
 # Configure Terraform backend for state management
 terraform {
   backend "s3" {
-    bucket         = "top-fashion-state-bucket-st"
+    bucket         = "cloudspace-consulting-state-bucket-st"
     key            = "global/terraform.tfstate"
     region         = "eu-south-2"
-    dynamodb_table = "top-fashion-lock-table-st"
+    dynamodb_table = "cloudspace-consulting-lock-table-st"
   }
 }

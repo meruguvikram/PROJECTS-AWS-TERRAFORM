@@ -17,7 +17,7 @@ amazon-linux-extras install epel -y
 yum install stress -y
 
 # Add custom webpage HTML code to "index.html" file
-echo "<html><body><h1>Welcome to TOP FASHION!</h1></body></html>" > /var/www/html/index.html
+echo "<html><body><h1>Welcome to Cloudspace Consulting!</h1></body></html>" > /var/www/html/index.html
 
 # Install SSM Agent (for AWS Systems Manager)
 yum install -y amazon-ssm-agent
