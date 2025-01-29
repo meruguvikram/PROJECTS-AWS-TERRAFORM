@@ -3,11 +3,14 @@ sudo apt update
 sudo apt install -y python3 python3-pip python3-virtualenv nginx jq
 
 # Hardcoded Git repository URL
-git clone https://github.com/PacktPublishing/AWS-Cloud-Projects.git
+git clone https://github.com/Silas-cloudspace/cea-projects-userdata.git
+
+# Dynamically extract the repository name
+REPO_NAME=$(basename -s .git https://github.com/Silas-cloudspace/cea-projects-userdata.git)
 
 # Copy and clean up backend code
-cp -r $(echo "AWS-Cloud-Projects" | sed 's/.*\///' | sed 's/\.git//')/chapter3/code/backend . 
-rm -rf $(echo "AWS-Cloud-Projects" | sed 's/.*\///' | sed 's/\.git//') 
+cp -r $REPO_NAME/backend .
+rm -rf $REPO_NAME
 cd backend
 
 # Replace SELECTED_REGION in main.py with the current instance's region
