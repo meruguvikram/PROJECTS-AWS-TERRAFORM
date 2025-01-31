@@ -33,18 +33,8 @@ resource "aws_iam_policy" "terraform_s3_policy" {
           "s3:PutObject",
           "s3:DeleteObject"
         ]
-        Resource = [
-          "arn:aws:s3:::cea-projects-terraform-state-st",
-          "arn:aws:s3:::cea-projects-terraform-state-st/global/s3/terraform.tfstate",
-          "arn:aws:s3:::cea-projects-terraform-state-st/global/s3/terraform.tfstate.tflock"
-        ]
+        Resource = "arn:aws:s3:::<your state s3 bucket>/*"         
       }
     ]
   })
-}
-
-# Attach the IAM Policy directly to a specific IAM User
-resource "aws_iam_user_policy_attachment" "attach_policy_user" {
-  user       = "<your IAM username>"
-  policy_arn = aws_iam_policy.terraform_s3_policy.arn
 }
