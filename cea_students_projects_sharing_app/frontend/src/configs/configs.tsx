@@ -6,4 +6,10 @@ export const appConfig = {
   title: "Projects Sharing App",
   iconFileName: "cea.png",
 };
-export const API_URL = "https://ec2-3-88-39-231.compute-1.amazonaws.com";
+export const API_URL = "https://<api endpoint>";
+
+
+
+
+
+
