@@ -1,7 +1,6 @@
 # EC2 IAM Role
 resource "aws_iam_role" "ec2_combined_role" {
   name = "${var.project_name}-${var.environment}-combined-role"
-
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -17,11 +16,9 @@ resource "aws_iam_role" "ec2_combined_role" {
 }
 
 # IAM Policy for DynamoDB Access
-# IAM Policy for DynamoDB Access
-resource "aws_iam_role_policy" "dynamodb_access" {
-  name = "${var.project_name}-${var.environment}-dynamodb-access"
-  role = aws_iam_role.ec2_combined_role.id
-
+resource "aws_iam_policy" "dynamodb_access" {
+  name        = "${var.project_name}-${var.environment}-dynamodb-access"
+  description = "Allows EC2 instances to access DynamoDB"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -65,7 +62,13 @@ resource "aws_iam_policy" "cloudwatch_logs_policy" {
   })
 }
 
-# Attach IAM Policy to EC2 Role for CloudWatch Logs
+# Attach DynamoDB Policy to EC2 Role
+resource "aws_iam_role_policy_attachment" "attach_dynamodb_policy" {
+  role       = aws_iam_role.ec2_combined_role.name
+  policy_arn = aws_iam_policy.dynamodb_access.arn
+}
+
+# Attach CloudWatch Logs Policy to EC2 Role
 resource "aws_iam_role_policy_attachment" "attach_cloudwatch_logs_policy" {
   role       = aws_iam_role.ec2_combined_role.name
   policy_arn = aws_iam_policy.cloudwatch_logs_policy.arn
