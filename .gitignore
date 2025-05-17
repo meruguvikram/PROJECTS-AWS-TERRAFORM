@@ -1,0 +1,33 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore crash logs
+crash.log
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore override files
+# *.tfvars
+# *.tfvars.json
+
+# Ignore provider binaries (like large .exe files inside .terraform)
+.terraform/providers/
+
+# Ignore plan output
+*.tfplan
+
+# Ignore Terraform lock file (optional, depending on your workflow)
+.terraform.lock.hcl
+
+# Ignore backup files
+*.backup
+
+# Ignore local backend files
+state-backend/.terraform/
+
+# Node or Python artifacts (optional, if using)
+node_modules/
+__pycache__/
+*.py[cod]
